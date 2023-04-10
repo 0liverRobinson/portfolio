@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Portfolio - Oliver Robinson</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="img/logo.png">
+    </head>
+
+    <body>
+
+        <canvas id="cube_pattern"></canvas>
+
+        <div id="main">
+            <div id="main_contents">
+                <p id="main_title">Hello!</p>
+                <p id="main_subtitlew">Welcome to my portfolio.</p>
+            </div>
+            <a href="#contents_container">
+                <div id="arrow_outline">
+                    <i id="arrow"></i>
+                </div>
+            </a>
+        </div>
+
+        <div id="contents_container" href="#contents_container">
+            
+            <div id="contents_left">
+                <img draggable="false" id="pfp" src="img/logo.png" alt="cube_with_eyes">
+                    <p id="name_title"><b>Oliver<br><font color="orange">Robinson</font></b></p>
+                <div id="side_bar">
+                    <a href="#about_section" style="text-decoration: none;"><div class="list">About</div></a>
+                    <a href="#projects_section" style="text-decoration: none;"><div class="list">Projects</div></a>
+                    <a href="#skills_section" style="text-decoration: none;"><div class="list">Skills</div></a>
+                    <a href="#contact_section" style="text-decoration: none;"><div class="list">Contact</div></a>
+                </div>
+            </div>
+
+            <div id="contents_right">
+                
+                <div id="arrow_container" style="padding-top: 5px;">
+                    <a href="#main">
+                        <div id="arrow_outline_up">
+                            <i id="arrow_up"></i>
+                        </div>
+                    </a>
+                </div>
+
+                    <div class="section" id="about_section">
+                        <div class="section_title"><span>About</span></div>
+                    </div>
+                    
+                    <div class="section" id="projects_section">
+                        <div class="section_title"><span>Projects</span></div>
+                    </div>
+
+                    <div class="section" id="skills_section">
+                        <div class="section_title"><span>Skills</span></div>
+                    </div>
+
+                    <div class="section" id="contact_section">
+                        <div class="section_title"><span>Contact</span></div>
+                    </div>
+                    
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+
+</html>
