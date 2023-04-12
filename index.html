@@ -3,30 +3,34 @@
     <head>
         <title>Portfolio - Oliver Robinson</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="media.css">
+        <link rel="stylesheet" href="animations.css">
         <link rel="icon" type="image/x-icon" href="img/logo.png">
     </head>
 
     <body>
 
         <canvas id="cube_pattern"></canvas>
+        <canvas id="text_pattern"></canvas>
 
         <div id="main">
             <div id="main_contents">
                 <p id="main_title">Hello!</p>
-                <p id="main_subtitlew">Welcome to my portfolio.</p>
+                <p id="main_subtitle">Welcome to my portfolio.</p>
             </div>
-            <a href="#contents_container">
-                <div id="arrow_outline">
-                    <i id="arrow"></i>
-                </div>
-            </a>
         </div>
 
+        <div id="arrow_container">
+            <a onclick="arrowFunction()"><img id="arrow" src="img/arrow.png" alt="arrow" width="50px" height="50px"></a>
+        </div>
         <div id="contents_container" href="#contents_container">
             
+
+            <div id="hamburger_menu"></div>
+
             <div id="contents_left">
                 <img draggable="false" id="pfp" src="img/logo.png" alt="cube_with_eyes">
-                    <p id="name_title"><b>Oliver<br><font color="orange">Robinson</font></b></p>
+                    <p id="name_title">Oliver Robinson</p>
                 <div id="side_bar">
                     <a href="#about_section" style="text-decoration: none;"><div class="list">About</div></a>
                     <a href="#projects_section" style="text-decoration: none;"><div class="list">Projects</div></a>
@@ -36,34 +40,132 @@
             </div>
 
             <div id="contents_right">
-                
-                <div id="arrow_container" style="padding-top: 5px;">
-                    <a href="#main">
-                        <div id="arrow_outline_up">
-                            <i id="arrow_up"></i>
-                        </div>
-                    </a>
-                </div>
-
                     <div class="section" id="about_section">
                         <div class="section_title"><span>About</span></div>
+                        <p class="section_text">
+                            
+                            Hello ! My name is Oliver.
+                            I am a software engineer with a lot of experience building my own projects in my freetime. 
+                            I enjoy building a variety of different programs. 
+
+                            
+                        </p>
+
                     </div>
                     
                     <div class="section" id="projects_section">
-                        <div class="section_title"><span>Projects</span></div>
+                            <div class="section_title"><span>Projects</span></div>
+                        <div id="project_slide" onmousemove="getMouseCoordinates()" onmousedown="setAnchorPoint()"  onmouseleave="reset()" onmouseup="reset()">
+                            <div class="section_text">
+
+                            <div id="slides_container">
+                                <!-- Path Finding -->
+                                <div class="slide">
+                                    <header>
+                                        Path-finding
+                                    </header>
+                                    <p>
+                                    </p>
+                                    <footer>
+                                        <b>&rarr; <a href="">Check out here</a> &larr;</b> 
+                                    </footer>
+                                </div>
+
+                                <!-- Packet Sniffer -->
+                                <div class="slide">
+                                    <header>
+                                        Packet Sniffer
+                                    </header>
+                                    <p>
+
+                                    </p>
+                                    <footer>
+                                        <b>&rarr; <a href="">Check out here</a> &larr;</b> 
+                                    </footer>
+                                </div>
+
+
+                                <!-- JS Game -->
+                                <div class="slide">
+                                    <header>
+                                        Video Game
+                                    </header>
+                                    <p>
+                                    
+                                    </p>
+                                    <footer>
+                                        <b>&rarr; <a href="">Check out here</a> &larr;</b> 
+                                    </footer>
+                                </div>
+
+
+                                <!-- Port-Scanner-Detector -->
+                                <div class="slide">
+                                    <header>
+                                        Memory Management
+                                    </header>
+                                    <p>
+                                        Written in C, this Linux exclusive library contains the functions needed to allocate and free allocated memory for C programs.
+                                    </p>
+                                    <footer>
+                                    <b>&rarr; <a href="">Check out here</a> &larr;</b> 
+                                    </footer>
+                                </div> 
+                                
+                                <!-- Fast-Find -->
+                                <div class="slide">
+                                    <header>
+                                        Fast Find
+                                    </header>
+                                    <p>
+                                        
+                                    </p>
+                                    <footer>
+                                        <b>&rarr; <a href="">Check out here</a> &larr;</b> 
+                                    </footer>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="section" id="skills_section">
                         <div class="section_title"><span>Skills</span></div>
+                        <div class="section_text">
+                                Languages:
+                                <ul>
+                                    <li>C, C++</li>
+                                    <li>Python</li>
+                                    <li>Java</li>
+                                    <li>HTML, CSS, JavaScript</li>
+                                    <li>Bash</li>
+                                    <li>Erlang</li>
+                                    <li>NodeJS</li>
+                                </ul>
+                                
+                                Specialisations:
+                                <ul>
+                                    <li>Ethical Hacking</li>
+                                    <li>Object-oriented Programming</li>
+                                    <li>Functional Programming</li>
+                                    <li>Web Development</li>
+                                    <li>Software Designing</li>
+                                    <li>Front-End Development</li>
+                                    <li>GUI Designing</li>
+                                </ul>
+                        </div>
                     </div>
 
                     <div class="section" id="contact_section">
                         <div class="section_title"><span>Contact</span></div>
+                        <p>Email: o.h.robinson@lancaster.ac.uk</p>
                     </div>
                     
             </div>
         </div>
         <script src="script.js"></script>
+        <script src="slideshow.js"></script>
+        <script src="animation.js"></script>
     </body>
 
 </html>

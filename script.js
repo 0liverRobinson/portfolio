@@ -4,6 +4,8 @@ var ctx = canvas.getContext("2d");
 var width, height;
 var cubes = [];
 var scaleX, scaleY;
+var animateToggle = true;
+
 class Vertex {
     constructor(x, y, z)
     {
@@ -54,7 +56,7 @@ class Cube {
     }
 
     move() {
-        // Rotate all the vertex and move origin
+        // Rotate all the vertexes on all axis
         this.vertexes.forEach((vertex) => {
             this.rotateX(vertex);
             this.rotateY(vertex);
@@ -119,8 +121,33 @@ function playAnimation()
 }
 playAnimation();
 
-
 function arrowFunction()
 {
-   document.getElementById('contents_container').scrollIntoView();
+    if (window.scrollY == 0 ) {
+        document.getElementById('contents_container').scrollIntoView();
+        document.getElementById('arrow').style.rotate="180deg";
+        document.getElementById('arrow_container').style.top="5%";
+        if (window.innerWidth >=  992)
+        {
+            document.getElementById('arrow_container').style.left="95%";
+            document.getElementById('arrow_container').style.top="90%";
+
+            // Undo
+            document.getElementById('arrow_container').style.background="rgba(256, 256, 256, 0.7)";
+
+            document.getElementById('arrow_container').style.width=document.getElementById('arrow_container').style.height="50px";
+            
+
+        } else {
+            document.getElementById('arrow_container').style.left="50%";
+
+        }
+    }
+    else { 
+        document.getElementById('main').scrollIntoView();
+        document.getElementById('arrow').style.rotate="0deg";
+        document.getElementById('arrow_container').style.top="90%";
+        document.getElementById('arrow_container').style.left="50%";
+        document.getElementById('arrow_container').style.background="transparent";
+    }
 }
