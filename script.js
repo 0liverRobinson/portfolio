@@ -123,6 +123,7 @@ playAnimation();
 
 function arrowFunction()
 {
+    /*
     if (window.scrollY == 0 ) {
         document.getElementById('contents_container').scrollIntoView();
         document.getElementById('arrow').style.rotate="180deg";
@@ -149,5 +150,6 @@ function arrowFunction()
         document.getElementById('arrow_container').style.top="90%";
         document.getElementById('arrow_container').style.left="50%";
         document.getElementById('arrow_container').style.background="transparent";
-    }
+    }*/
+    
 }

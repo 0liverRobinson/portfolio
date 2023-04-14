@@ -1,4 +1,5 @@
 const sections = document.getElementsByClassName("section");
+const top = document.getElementById("");
 const observer = new IntersectionObserver( elements => {
     elements.forEach( element => {
         
@@ -16,6 +17,16 @@ const observer = new IntersectionObserver( elements => {
 
 });
 
-
 for (let i = 0; i < sections.length; i++)
     observer.observe(sections[i]);
+
+const top_observer = new IntersectionObserver( elements => {
+    elements.forEach( element => {
+        if( element.isIntersecting ) {
+            
+            return;
+        }
+
+    });
+
+});

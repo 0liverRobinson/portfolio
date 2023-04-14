@@ -263,6 +263,8 @@ html {
 .section{
     font-size: 130%;
     color: black;
+    height: 100%;
+    width: 100%;
 }
 #project_slide {
     white-space: nowrap;
@@ -289,7 +291,7 @@ white-space: initial;
     left: 0%;
     margin: 15px;
     z-index: 1;
-    height: 400px;
+    height: 600px;
     padding: 5px;
     
 }
@@ -320,6 +322,7 @@ white-space: initial;
     position: relative;
     top: -2%;
     white-space: inherit;
+    font-size: 15px;
     font-family: 'OpenSans';
 
 }
