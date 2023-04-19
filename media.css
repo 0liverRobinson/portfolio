@@ -12,6 +12,16 @@
     #contents_left {
         display: none;
     }
+    #arrow_container {
+        transform: translate(-12.5%, 0%);
+    }
+    #arrow_container img {
+        width: 20%;
+        height: 20%;
+    }
+    #email_form {
+        width: 80%;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -27,6 +37,16 @@
     }
     #contents_left {
         display: none;
+    }
+    #arrow_container {
+        transform: translate(-12.5%, 0%);
+    }
+    #arrow_container img {
+        width: 20%;
+        height: 20%;
+    }
+    #email_form {
+        width: 80%;
     }
 }
  
@@ -45,6 +65,13 @@
     #contents_left {
         display: none;
     }
+    #arrow_container img {
+        width: 20%;
+        height: 20%;
+    }
+    #email_form {
+        width: 80%;
+    }
 }
 
 
@@ -59,6 +86,13 @@
     #contents_left {
         display: flex;
     }
+    #arrow_container img {
+        width: 10%;
+        height: 10%;
+    }
+    #email_form {
+        width: 50%;
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -68,5 +102,8 @@
     }
     #contents_left {
         display: flex;
+    }
+    #email_form {
+        width: 50%;
     }
 }

@@ -43,6 +43,32 @@
         transform: rotate(360deg);
     }
 }
+@keyframes flipA {
+    0% {
+        transform-origin: center;
+        transform: rotate(0deg);
+    }
+    100% {
+        transform-origin: center;
+        transform: rotate(180deg);
+
+    }
+}   
+@keyframes flipB {
+    0% {
+        transform-origin: center;
+        transform: rotate(180deg);
+    }
+    100% {
+        transform-origin: center;
+        transform: rotate(0deg);
+
+    }
+}   
+
+.flip_a {
+    animation: 1s flipA;
+}
 
 @media (prefers-reduced-motion: no-preference) {
     .dropper {
@@ -51,4 +77,14 @@
     .sweepLeft {
         animation: sweepLeft 1s;
     }
+    .riseBottom {
+        animation: drop 1s;
+    }
+    .flipA {
+        animation: flipA 1s;
+    }
+    .flipB {
+        animation: flipB 1s;
+    }
 }
+

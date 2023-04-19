@@ -1,5 +1,8 @@
 const canvas = document.getElementById("cube_pattern");
 const parent = document.getElementById("main");
+const main_contents = document.getElementById('contents_container');
+const arrow = document.getElementById("arrow");
+
 var ctx = canvas.getContext("2d");
 var width, height;
 var cubes = [];
@@ -19,6 +22,7 @@ class Vertex {
         this.y+=dy;
     }
 }
+
 class Cube {
     constructor(x1,y1,z1)
     {
@@ -27,7 +31,7 @@ class Cube {
         this.originX = x1;
         this.originY = y1;
         this.originZ = z1;
-        this.len = canvas.width/5;
+        this.len = (canvas.width > canvas.height) ? canvas.width/5 : canvas.width/3;
         this.side = canvas.width/100 * (Math.random() * 10) + this.len;
         this.thetaX = Math.random() / 100;
         this.thetaY = Math.random() / 100;
@@ -121,35 +125,34 @@ function playAnimation()
 }
 playAnimation();
 
-function arrowFunction()
+
+function arrowAnimate()
 {
-    /*
-    if (window.scrollY == 0 ) {
-        document.getElementById('contents_container').scrollIntoView();
-        document.getElementById('arrow').style.rotate="180deg";
-        document.getElementById('arrow_container').style.top="5%";
-        if (window.innerWidth >=  992)
-        {
-            document.getElementById('arrow_container').style.left="95%";
-            document.getElementById('arrow_container').style.top="90%";
+    let isMobile = window.innerHeight > window.innerWidth;
+    if (window.scrollY >= window.innerHeight) {
+        // First half of screen
+        parent.scrollIntoView();
 
-            // Undo
-            document.getElementById('arrow_container').style.background="rgba(256, 256, 256, 0.7)";
+        arrow.style.transform="rotate(180deg)";
 
-            document.getElementById('arrow_container').style.width=document.getElementById('arrow_container').style.height="50px";
-            
+        // Move arrow to centre screen (YES, CENTRE - NOT 'CENTER')
+        arrow.style.left = "50%";
+        arrow.style.transform = "translate(-50%, 0%)";
 
-        } else {
-            document.getElementById('arrow_container').style.left="50%";
+    } else 
+    {
+        // Second half of screen
+        main_contents.scrollIntoView();
 
+        // Pause top animation
+        
+
+        arrow.style.transform="rotate(0deg)";
+
+        // Spin back up 
+        if (!isMobile) {
+            arrow.style.left = "90%";
         }
     }
-    else { 
-        document.getElementById('main').scrollIntoView();
-        document.getElementById('arrow').style.rotate="0deg";
-        document.getElementById('arrow_container').style.top="90%";
-        document.getElementById('arrow_container').style.left="50%";
-        document.getElementById('arrow_container').style.background="transparent";
-    }*/
-    
+
 }
