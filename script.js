@@ -105,6 +105,11 @@ function adjustCanvas()
     canvas.height = parent.clientHeight;
     canvas.width = parent.clientWidth;
 }
+
+function scollTop() {
+    window.scrollTo(0, 0);
+}
+
 // Set canvas specs
 adjustCanvas();
 
@@ -117,7 +122,17 @@ window.addEventListener("resize", adjustCanvas);
 document.body.addEventListener("resize", adjustCanvas);
 
 // Disable mobile scrolling
-document.body.addEventListener('touchstart', function(event){ event.preventDefault(); });
+document.body.addEventListener('touchstart', function(event){ 
+    event.preventDefault(); 
+    event.stopPropagation();
+});
+document.body.addEventListener('touchmove', function(event){ 
+    event.preventDefault(); 
+    event.stopPropagation();
+});
+
+// Make sure we don't start at anywhere inconvenient:
+window.onbeforeunload = scollTop;
 
 
 // Play cube animation
