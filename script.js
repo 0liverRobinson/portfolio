@@ -116,6 +116,10 @@ for (let i = 0; i < 15; i++)
 window.addEventListener("resize", adjustCanvas);
 document.body.addEventListener("resize", adjustCanvas);
 
+// Disable mobile scrolling
+document.body.addEventListener('touchstart', function(event){ event.preventDefault(); });
+
+
 // Play cube animation
 function playAnimation()
 {
