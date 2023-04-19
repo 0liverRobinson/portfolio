@@ -8,6 +8,7 @@ var width, height;
 var cubes = [];
 var scaleX, scaleY;
 var animateToggle = true;
+let scrolling = false;
 
 class Vertex {
     constructor(x, y, z)
@@ -108,14 +109,20 @@ function adjustCanvas()
 
 
 // Scroll to top of page
-function scrollTop() { window.scrollTo(0, 0); }
+function scrollTop() { 
+    scrolling = true;
+    window.scrollTo(0, 0); 
+    setTimeout(() => {
+        scrolling = false;
+    }, 1000);
+}
 
 // Disable scrolling
 function disableScroll(e) {
-    
-    e.preventDefault();
-
-    e.stopPropagation();
+    if (!scrolling) { 
+        e.preventDefault();
+        e.stopPropagation();
+    }
 }
 
 
@@ -151,7 +158,11 @@ playAnimation();
 
 
 function arrowAnimate()
-{
+{   scrolling = true;
+    setTimeout(() => {
+        scrolling = false;
+    }, 1000);
+
     let isMobile = window.innerHeight > window.innerWidth;
     if (window.scrollY >= window.innerHeight) {
         // First half of screen
