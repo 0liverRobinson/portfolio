@@ -23,7 +23,7 @@ const WORDLIST = [
     "Machine Learning",
     "Mobile Development"
 ];
-const PARENT = document.getElementById("contents_right");
+const MAIN = document.getElementById("contents_container");
 
 let clickPointOffsetX = 0;
 let can = CANVAS.getContext("2d");
@@ -96,7 +96,7 @@ class Word {
 
 function adjustCanvas()
 {
-    CANVAS.height = window.innerHeight;
+    CANVAS.height = MAIN.offsetHeight;
     CANVAS.width = window.innerWidth;
 }
 

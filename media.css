@@ -22,6 +22,19 @@
     #email_form {
         width: 80%;
     }
+    #arrow {
+        display: none;
+    }
+    body {
+        overflow: visible;
+    }
+    #contents_right {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    #contents_container {
+        height: fit-content;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -48,6 +61,19 @@
     #email_form {
         width: 80%;
     }
+    #arrow {
+        display: none;
+    }
+    body {
+        overflow: visible;
+    }
+    #contents_right {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    #contents_container {
+        height: fit-content;
+    }
 }
  
 
@@ -72,6 +98,19 @@
     #email_form {
         width: 80%;
     }
+    #arrow {
+        display: none;
+    }
+    body {
+        overflow: visible;
+    }
+    #contents_right {
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    #contents_container {
+        height: fit-content;
+    }
 }
 
 
@@ -93,6 +132,19 @@
     #email_form {
         width: 50%;
     }
+    #arrow {
+        display: inline;
+    }
+    body {
+        overflow: hidden;
+    }
+    #contents_right {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    #contents_container {
+        height: 100%;
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -105,5 +157,18 @@
     }
     #email_form {
         width: 50%;
+    }
+    #arrow {
+        display: inline;
+    }
+    body {
+        overflow: hidden;
+    }
+    #contents_right {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    #contents_container {
+        height: 100%;
     }
 }

@@ -105,6 +105,11 @@ function adjustCanvas()
 {
     canvas.height = parent.clientHeight;
     canvas.width = parent.clientWidth;
+
+    // Set scrollpoint to nearest relevent point
+    window.scrollTo(0, (window.scrollY >= window.innerHeight) ? window.innerHeight : 0);
+
+
 }
 
 
@@ -137,15 +142,8 @@ for (let i = 0; i < 15; i++)
 window.addEventListener("resize", adjustCanvas);
 document.body.addEventListener("resize", adjustCanvas);
 
-
-// Disable scrolling for mobile devices
-window.addEventListener("scroll", disableScroll, false);
-
 // Make sure we don't start at anywhere inconvenient:
 window.onbeforeunload = scrollTop;
-
-window.addEventListener("touchmove", disableScroll, {passive: false});
-
 
 // Play cube animation
 function playAnimation()
@@ -178,9 +176,6 @@ function arrowAnimate()
     {
         // Second half of screen
         main_contents.scrollIntoView();
-
-        // Pause top animation
-        
 
         arrow.style.transform="rotate(0deg)";
 
