@@ -9,6 +9,7 @@ var cubes = [];
 var scaleX, scaleY;
 var animateToggle = true;
 let scrolling = false;
+let previousWidth = 0, previousHeight = 0;
 
 class Vertex {
     constructor(x, y, z)
@@ -106,10 +107,12 @@ function adjustCanvas()
     canvas.height = parent.clientHeight;
     canvas.width = parent.clientWidth;
 
-    // Set scrollpoint to nearest relevent point
-    window.scrollTo(0, (window.scrollY >= window.innerHeight) ? window.innerHeight : 0);
 
-
+    if (previousWidth != window.innerWidth)
+        // Set scrollpoint to nearest relevent point
+        window.scrollTo(0, (window.scrollY >= window.innerHeight) ? window.innerHeight : 0);
+    previousWidth = window.innerWidth;
+    previousHeight = window.innerHeight;
 }
 
 

@@ -35,6 +35,20 @@
     #contents_container {
         height: fit-content;
     }
+    .slide {
+        margin: 10px;
+        width: 90%;
+    }
+    #main_subtitle{
+        animation: 1s ease-out 0s 1 comeInRight;
+        font-size: 50%;
+    }
+    .section_title span::before,  .section_title span::after{
+        width: 60%;
+    }
+    #project_slide {
+        left: -20%;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -74,6 +88,20 @@
     #contents_container {
         height: fit-content;
     }
+    .slide {
+        margin: 10px;
+        width: 90%;
+    }
+    #main_subtitle{
+        animation: 1s ease-out 0s 1 comeInRight;
+        font-size: 50%;
+    }
+    .section_title span::before,  .section_title span::after{
+        width: 60%;
+    }
+    #project_slide {
+        left: -20%;
+    }
 }
  
 
@@ -111,6 +139,34 @@
     #contents_container {
         height: fit-content;
     }
+    .slide {
+        margin: 10px;
+        width: 90%;
+    }
+    #main_subtitle{
+        animation: 1s ease-out 0s 1 comeInRight;
+        font-size: 50%;
+    }
+    .section_title span {
+        display: inline-block;
+        position: relative;   
+    }
+    .section_title span::before,  .section_title span::after{
+        content: "";
+        position: absolute;
+        border-top: 5px solid red;
+        top: 50%;
+        width: 100%;
+    }
+    .section_title span::before{
+        right: 100%;
+    }
+    .section_title span::after{
+        left: 100%;
+    }
+    #project_slide {
+        left: -20%;
+    }
 }
 
 
@@ -145,6 +201,34 @@
     #contents_container {
         height: 100%;
     }
+    .slide {
+        margin: 35px;
+        width: 40%;
+    }
+    #main_subtitle{
+        animation: 1s ease-out 0s 1 comeInRight;
+        font-size: 100%;
+    }
+    .section_title span {
+        display: inline-block;
+        position: relative;   
+    }
+    .section_title span::before,  .section_title span::after{
+        content: "";
+        position: absolute;
+        border-top: 5px solid red;
+        top: 50%;
+        width: 100%;
+    }
+    .section_title span::before{
+        right: 100%;
+    }
+    .section_title span::after{
+        left: 100%;
+    }
+    #project_slide {
+        left: 0%;
+    }
 }
 
 /* Large Devices, Wide Screens */
@@ -170,5 +254,35 @@
     }
     #contents_container {
         height: 100%;
+    }
+
+    .slide {
+        margin: 35px;
+        width: 40%;
+
+    }
+    #main_subtitle{
+        animation: 1s ease-out 0s 1 comeInRight;
+        font-size: 100%;
+    }
+    .section_title span {
+        display: inline-block;
+        position: relative;   
+    }
+    .section_title span::before,  .section_title span::after{
+        content: "";
+        position: absolute;
+        border-top: 5px solid red;
+        top: 50%;
+        width: 100%;
+    }
+    .section_title span::before{
+        right: 100%;
+    }
+    .section_title span::after{
+        left: 100%;
+    }
+    #project_slide {
+        left: 0%;
     }
 }

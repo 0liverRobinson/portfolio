@@ -81,7 +81,6 @@ body {
     overflow-y: hidden;
     margin: 0;
     padding: 0;
-
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -125,6 +124,7 @@ html {
 
 #main_subtitle{
     animation: 1s ease-out 0s 1 comeInRight;
+    font-size: 100%;
 }
 #main_title {
     position: relative;
@@ -297,6 +297,26 @@ html {
     width: 100%;
     margin: 0px;
 }
+.slide button {
+    position: relative;
+    width: 50%;
+    height: 50px;
+    color: red;
+    background-color: white;
+    border: 2px solid red;
+    transform: translate(-50%, 0%);
+    border-radius: 15px;
+}
+
+.slide button:hover {
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: white 1px solid;
+}
+
+ 
+
 .slide header {
     text-align: center;
     color: black;
@@ -306,7 +326,6 @@ html {
 .slide a {
     text-decoration: none;
     color: red;
-
 }
 .slide a:hover {
     text-decoration: underline;
@@ -322,8 +341,8 @@ html {
 .slide footer {
     position: absolute;
     left: 50%;
-    transform: translate(-50%, 0%);
-    bottom: 0%;
+    width: 100%;
+    bottom: 2%;
 }
 
 #about_section {
@@ -363,6 +382,8 @@ html {
     font-family: 'OpenSans';
     font-size: 70%;
     color: black;
+    border-radius: 15px;
+
 }
 
 #email_form button {
@@ -389,6 +410,7 @@ html {
     font-family: 'OpenSans';
     font-size: 70%;
     color: black;
+    border-radius: 15px;
 }
 
 #email_form textarea:focus, #email_form input:focus{
