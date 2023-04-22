@@ -260,12 +260,30 @@ html {
     color: black;
     font-family: 'OpenSans';
 }
+#lists li {
+    background-color: beige;
+    border: 3px solid red;
+    margin-top: 15px;
+    width: 90%;
+    padding: 15px;
+    list-style: none;
+}
+
+#lists li:hover {
+    background-color: red;
+    border: 3px solid beige;
+    color: white;
+}
+.list_title {
+    font-size: 40px;
+}
 #text_pattern{
     position: absolute;
     margin: 0;
     left: 0%;
     top: 100%;
 }
+
 .section{
     font-size: 130%;
     color: black;
@@ -306,6 +324,7 @@ html {
     border: 2px solid red;
     transform: translate(-50%, 0%);
     border-radius: 15px;
+    font-size: 20px;
 }
 
 .slide button:hover {
@@ -320,7 +339,7 @@ html {
 .slide header {
     text-align: center;
     color: black;
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'OpenSans';
 }
 .slide a {
@@ -330,13 +349,20 @@ html {
 .slide a:hover {
     text-decoration: underline;
 }
-.slide p {
-    position: relative;
-    top: -2%;
-    white-space: inherit;
-    font-size: 15px;
-    font-family: 'OpenSans';
 
+.splitter {
+    width: 75%;
+    border-top: 5px solid red;
+    border-radius: 7px;
+}
+
+.slide ul {
+    position: absolute;
+    top: 25%;
+    white-space: inherit;
+    font-size: 25px;
+    font-family: 'OpenSans';
+    height: 100%;
 }
 .slide footer {
     position: absolute;
@@ -358,7 +384,9 @@ html {
 #contact_section {
     background-color: transparent;
 }
-
+.list_key {
+    color: red;
+}
 #email_form {
     position: relative;
     left: 50%;
@@ -392,9 +420,9 @@ html {
     width: 105px;
     background-color: red;
     color: white;
-    border: white 1px solid;
-    
+    border: white 1px solid;   
 }
+
 #email_form button:hover {
     cursor: pointer;
     color: red;

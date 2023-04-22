@@ -49,6 +49,29 @@
     #project_slide {
         left: -20%;
     }
+    #lists li {
+        background-color: beige;
+        border: 3px solid red;
+        margin-top: 15px;
+        width: 80%;
+        padding: 15px;
+        list-style: none;
+    }
+    #email_form {
+        position: relative;
+        width: 100%;
+    }
+    #email_form label {
+        font-size: 130%;
+    }
+    #email_form input {
+        width: 90%;
+        font-size: 50%;
+    }
+    #email_form textarea { 
+        font-size: 50%;
+
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -102,6 +125,21 @@
     #project_slide {
         left: -20%;
     }
+    #email_form {
+        position: relative;
+        width: 75%;
+    }
+    #email_form label {
+        font-size: 130%;
+    }
+    #email_form input {
+        width: 90%;
+        font-size: 50%;
+    }
+    #email_form textarea { 
+        font-size: 50%;
+
+    }
 }
  
 
@@ -141,7 +179,7 @@
     }
     .slide {
         margin: 10px;
-        width: 90%;
+        width: 60%;
     }
     #main_subtitle{
         animation: 1s ease-out 0s 1 comeInRight;
@@ -167,6 +205,69 @@
     #project_slide {
         left: -20%;
     }
+    #lists li {
+        background-color: beige;
+        border: 3px solid red;
+        margin-top: 15px;
+        width: 90%;
+        padding: 15px;
+        list-style: none;
+    }
+    #email_form {
+        position: relative;
+        left: 50%;
+        width: 75%;
+        background-color: white;
+        transform: translate(-50%, 0%);
+        border: 5px whitesmoke solid;
+        border-radius: 15px;
+        justify-content: center;
+        text-align: center;
+    }
+    #email_form label {
+        font-size: 150%;
+    }
+    #email_form input {
+        position: relative;
+        height: 45px;
+        width: 70%;
+        padding: 10px;
+        border: 2px solid red;
+        font-family: 'OpenSans';
+        font-size: 70%;
+        color: black;
+        border-radius: 15px;
+    
+    }
+    
+    #email_form button {
+        position: relative;
+        height: 35px;
+        width: 105px;
+        background-color: red;
+        color: white;
+        border: white 1px solid;
+        
+    }
+    
+    #email_form button:hover {
+        cursor: pointer;
+        color: red;
+        background-color: white;
+        border: 2px solid red;
+    }   
+    #email_form textarea {
+        width: 90%;
+        height: 400px;
+        resize: none;
+        padding: 10px;
+        border: 2px solid red;
+        font-family: 'OpenSans';
+        font-size: 70%;
+        color: black;
+        border-radius: 15px;
+    }
+    
 }
 
 
@@ -229,6 +330,69 @@
     #project_slide {
         left: 0%;
     }
+    #lists li {
+        background-color: beige;
+        border: 3px solid red;
+        margin-top: 15px;
+        width: 90%;
+        padding: 15px;
+        list-style: none;
+    }
+    #email_form {
+        position: relative;
+        left: 50%;
+        width: 50%;
+        background-color: white;
+        transform: translate(-50%, 0%);
+        border: 5px whitesmoke solid;
+        border-radius: 15px;
+        justify-content: center;
+        text-align: center;
+    }
+    #email_form label {
+        font-size: 150%;
+    }
+    #email_form input {
+        position: relative;
+        height: 45px;
+        width: 70%;
+        padding: 10px;
+        border: 2px solid red;
+        font-family: 'OpenSans';
+        font-size: 70%;
+        color: black;
+        border-radius: 15px;
+    
+    }
+    
+    #email_form button {
+        position: relative;
+        height: 35px;
+        width: 105px;
+        background-color: red;
+        color: white;
+        border: white 1px solid;
+        
+    }
+    
+    #email_form button:hover {
+        cursor: pointer;
+        color: red;
+        background-color: white;
+        border: 2px solid red;
+    }   
+    #email_form textarea {
+        width: 90%;
+        height: 400px;
+        resize: none;
+        padding: 10px;
+        border: 2px solid red;
+        font-family: 'OpenSans';
+        font-size: 70%;
+        color: black;
+        border-radius: 15px;
+    }
+    
 }
 
 /* Large Devices, Wide Screens */
@@ -255,7 +419,61 @@
     #contents_container {
         height: 100%;
     }
-
+    #email_form {
+        position: relative;
+        left: 50%;
+        width: 50%;
+        background-color: white;
+        transform: translate(-50%, 0%);
+        border: 5px whitesmoke solid;
+        border-radius: 15px;
+        justify-content: center;
+        text-align: center;
+    }
+    #email_form label {
+        font-size: 150%;
+    }
+    #email_form input {
+        position: relative;
+        height: 45px;
+        width: 70%;
+        padding: 10px;
+        border: 2px solid red;
+        font-family: 'OpenSans';
+        font-size: 70%;
+        color: black;
+        border-radius: 15px;
+    
+    }
+    
+    #email_form button {
+        position: relative;
+        height: 35px;
+        width: 105px;
+        background-color: red;
+        color: white;
+        border: white 1px solid;
+        
+    }
+    
+    #email_form button:hover {
+        cursor: pointer;
+        color: red;
+        background-color: white;
+        border: 2px solid red;
+    }   
+    #email_form textarea {
+        width: 90%;
+        height: 400px;
+        resize: none;
+        padding: 10px;
+        border: 2px solid red;
+        font-family: 'OpenSans';
+        font-size: 70%;
+        color: black;
+        border-radius: 15px;
+    }
+    
     .slide {
         margin: 35px;
         width: 40%;
@@ -284,5 +502,13 @@
     }
     #project_slide {
         left: 0%;
+    }
+    #lists li {
+        background-color: beige;
+        border: 3px solid red;
+        margin-top: 15px;
+        width: 90%;
+        padding: 15px;
+        list-style: none;
     }
 }
