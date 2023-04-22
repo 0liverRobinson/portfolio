@@ -35,6 +35,8 @@ class Cube {
         this.originZ = z1;
         this.len = (canvas.width > canvas.height) ? canvas.width/5 : canvas.width/3;
         this.side = canvas.width/100 * (Math.random() * 10) + this.len;
+        if (window.innerWidth <= 500)
+            this.side *= 3;
         this.thetaX = Math.random() / 100;
         this.thetaY = Math.random() / 100;
         this.thetaZ = Math.random() / 100;
@@ -52,6 +54,8 @@ class Cube {
     {
         this.vertexes.forEach((vertex) => {
             ctx.strokeStyle = "black";
+            if (window.innerWidth <= 500)
+                ctx.lineWidth = 1;
             this.vertexes.forEach((v) => {
                 ctx.beginPath();
                 ctx.moveTo(vertex.x + this.originX*(canvas.width/10), (vertex.y + (canvas.height/20)) + this.originY * canvas.height/10);
@@ -180,7 +184,7 @@ function arrowAnimate()
         // Second half of screen
         main_contents.scrollIntoView();
 
-        arrow.style.transform="rotate(0deg)";
+        arrow.style.transform="rotate(180deg)";
 
         // Spin back up 
         if (!isMobile) {
@@ -189,3 +193,5 @@ function arrowAnimate()
     }
 
 }
+arrow.style.left = "50%";
+arrow.style.transform = "translate(-50%, 0%)";
