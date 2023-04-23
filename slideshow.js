@@ -31,7 +31,6 @@ function getMouseCoordinates(event) {
         mouseX = event.touches[0].pageX;
         if (mouseDown)
         {
-            event.preventDefault();
             slides.style.left = (mouseX - mouseOffsetX) - margin + "px";
         }
     }
