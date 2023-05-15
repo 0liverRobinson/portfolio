@@ -5,19 +5,18 @@ const observer = new IntersectionObserver( elements =>
     {
         try  
         {
-
             let current_title = element.target.querySelector('.heading');
             let current_content = element.target.querySelector('.part_b');
-
-            if( element.isIntersecting && (window.pageYOffset < element.target.clientTop + element.target.clientHeight)) 
+         
+            if( element.isIntersecting) 
             {
-                current_title.classList.add('dropDown');
-                current_content.classList.add('riseUp');
+                current_title.classList.add('swipeRight');
+                current_content.classList.add('swipeLeft');
                 return;
             }
 
-            current_title.classList.remove('dropDown');
-            current_content.classList.remove('riseUp');
+            current_title.classList.remove('swipeRight');
+            current_content.classList.remove('swipeLeft');
 
         } catch (err) 
         {   

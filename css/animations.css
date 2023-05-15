@@ -1,33 +1,33 @@
-@keyframes riseUp 
+@keyframes swipeLeft 
 {
     0% 
     {
-        transform: translateY(100%);
+        transform: translateX(100%);
     }
     100% 
     {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
-@keyframes dropDown 
+@keyframes swipeRight 
 {
     0% 
     {
-        transform: translateY(-100%);
+        transform: translateX(-100%);
     }
     100% 
     {
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 @media (prefers-reduced-motion: no-preference) 
 {
-    .dropDown 
+    .swipeLeft 
     {
-        animation: dropDown 0.5s;
+        animation: swipeLeft 0.5s;
     }
-    .riseUp
+    .swipeRight
     {
-        animation: riseUp 0.5s;
+        animation: swipeRight 0.5s;
     }
 }
