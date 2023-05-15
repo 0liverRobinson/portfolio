@@ -1,0 +1,218 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (min-width: 200px) 
+{
+
+    .contents
+    {
+        color: white;
+        padding-bottom: 5%;
+        border-radius: 25px;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .heading
+    {
+        overflow: hidden;
+        text-align: center;
+        line-height: 2em;
+        top: 0%;
+    }
+    .heading span
+    {
+        display: inline-block;
+        position: relative;
+    }
+    .heading span::before, .heading span::after
+    {
+        content: "";
+        height: 10px;
+        position: absolute;
+        border-bottom: 3.5px solid #e03444;
+        width: 1000%;
+        top: 50%;
+        transform: translate(0px, -3.5px);
+    }
+    .heading span::before
+    {
+        right: 100%;
+        margin-right: 5px;
+    }
+    .heading span::after
+    {
+        left: 100%;
+        margin-left: 5px;
+    }
+
+    .text 
+    {
+        font-size: 1em;
+    }
+    .section_container
+    {
+        position: relative;
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        background-color:  #333360 ;
+        border-radius: 15px;
+        padding: 5%;
+        padding-top: 0%;
+    }
+    .splitter
+    {
+        position: relative;
+        left: 0%;
+        width: 100%;
+        height: 2em;
+        margin-bottom: 5%;
+    }
+    .toolbar
+    {
+        position: fixed;
+        margin: 0%;
+        top: 0%;
+        width: 100%;
+        z-index: 2;
+    }
+    .toolbar ul
+    {
+        margin: 0%;
+        padding: 0%;
+        list-style-type: none;
+    }
+    .toolbar a
+    {
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    .toolbar li
+    {
+        display: inline-block;
+        padding: 10px;
+    }
+    .toolbar_links
+    {
+        width: fit-content;
+        padding-left: 5%;
+        padding-right: 5%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        background-color: darkred;
+    }
+
+    #email_form
+    {
+        position: relative;
+        text-align: center;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, 0%);
+    }
+
+    #email_form input, #email_form textarea
+    {
+        background-color: transparent;
+        border: none;
+        border-bottom: #e03444 3px solid;
+        color: white;
+        width: 90%;
+    }
+    #email_form textarea
+    {
+        height: 7em;
+    }
+    #email_form button
+    {
+        position: relative;
+        background-color: #e03444;
+        color: white;
+        border: none;
+        border-bottom: 4px solid darkred;
+        border-radius: 5px;
+        width: 30%;
+    }
+    ::placeholder
+    {
+        color: lightgrey;
+    }
+    #email_form button:hover
+    {
+        background-color: white;
+        color: #e03444;
+    }
+    #email_form input:focus, #email_form textarea:focus
+    {
+        outline: none;
+    }
+    .alt
+    {
+        background-color: black;
+    }
+    svg
+    {
+        height: 40px;
+        width: 40px;
+        padding: 5px;
+    }
+    #welcome img
+    {
+        width: 100%;
+    }
+    #welcome h1
+    {
+        font-size: 2.0em;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) 
+{
+    #email_form input, #email_form textarea
+    {
+        background-color: transparent;
+        border: none;
+        border-bottom: #e03444 3px solid;
+        color: white;
+        width: 50%;
+    }
+    #welcome img
+    {
+        width: auto;
+    }
+    #welcome h1
+    {
+        font-size: 2.5em;
+    }
+    svg
+    {
+        height: 50px;
+        width: 50px;
+        padding: 5px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    html, body
+    {
+        font-size: 1.2em;
+    }
+
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) 
+{
+
+}

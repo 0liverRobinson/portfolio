@@ -1,0 +1,33 @@
+@keyframes riseUp 
+{
+    0% 
+    {
+        transform: translateY(100%);
+    }
+    100% 
+    {
+        transform: translateY(0);
+    }
+}
+@keyframes dropDown 
+{
+    0% 
+    {
+        transform: translateY(-100%);
+    }
+    100% 
+    {
+        transform: translateY(0);
+    }
+}
+@media (prefers-reduced-motion: no-preference) 
+{
+    .dropDown 
+    {
+        animation: dropDown 0.5s;
+    }
+    .riseUp
+    {
+        animation: riseUp 0.5s;
+    }
+}
