@@ -133,6 +133,7 @@
         border-radius: 5px;
         width: 30%;
         -webkit-appearance: none;
+        text-decoration: none !important;
     }
     ::placeholder
     {
