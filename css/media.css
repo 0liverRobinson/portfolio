@@ -132,6 +132,7 @@
         border-bottom: 4px solid darkred;
         border-radius: 5px;
         width: 30%;
+        -webkit-appearance: none;
     }
     ::placeholder
     {
