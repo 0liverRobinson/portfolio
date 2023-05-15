@@ -1,4 +1,3 @@
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 200px) 
 {
 
@@ -44,7 +43,6 @@
         left: 100%;
         margin-left: 5px;
     }
-
     .text 
     {
         font-size: 1em;
@@ -158,6 +156,20 @@
         width: 40px;
         padding: 5px;
     }
+    #welcome a 
+    {
+        color: white;    
+        text-decoration: none;
+    }
+    #welcome a:hover
+    {
+        color: #e03444;    
+    }
+    svg:hover
+    {
+        cursor: pointer;
+    }
+
     #welcome img
     {
         width: 100%;
@@ -165,6 +177,51 @@
     #welcome h1
     {
         font-size: 2.0em;
+    }
+    .slide
+    {
+        height: 500px;
+        text-align: center;
+    }
+    #slideshow
+    {
+        border: 3px solid #e03444;
+        border-radius: 15px;
+        padding: 13px;
+    }
+    #slideshow h3 
+    {
+        text-align: center;
+    }
+    #slideshow_container
+    {
+        width: 100%;
+        height: 100%;
+    }
+    #slideshow a 
+    {
+        color: white;    
+        text-decoration: none;
+    }
+    #slideshow a:hover
+    {
+        color: #e03444;    
+    }
+    .slide svg 
+    {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0%);
+    }
+    .slide_content
+    {
+        position: relative;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 150%;
+        top: 50%;
+        transform: translate(0%, -30%);
     }
 }
 
@@ -193,6 +250,22 @@
         width: 50px;
         padding: 5px;
     }
+    .slide_content
+    {
+        position: relative;
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+        height: 150%;
+        top: 50%;
+        transform: translate(0%, -25%);
+    }
+    #slideshow
+    {
+        width: 80%;
+        margin: 0 auto;
+        height: 700px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -202,13 +275,33 @@
     {
         font-size: 1.2em;
     }
-
+    #skills_section
+    {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #skills_section_container
+    {
+        width: 100%;
+    }
+    #slideshow
+    {
+        width: 80%;
+        margin: 0 auto;
+        height: 700px;
+    }
 } 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
 {
-
+    #slideshow
+    {
+        width: 50%;
+        margin: 0 auto;
+        height: 700px;
+    }
 } 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

@@ -54,11 +54,20 @@ function getMousePosition(event)
     mouse_y = event.clientY / scale;
 }
 
+function isMobileDevice()
+{
+    return ("maxTouchPoints" in navigator) ? navigator.maxTouchPoints > 0 : false;
+}
+
 function drawPoints()
 {
     points_array.forEach((point) => {
         
         ctx.fillStyle = "rgba(227,51,96,"+ point.radius / max_radius +")";
+        
+        // Don't get mouse coords if mobile
+        mouse_x = (!isMobileDevice()) ? mouse_x : point.origin_x;
+        mouse_y = (!isMobileDevice()) ? mouse_y : point.origin_y;
         
         // Move points slightly in the direction of the mouse capped at +- max_point_shift
         point.x = Math.min(Math.max(point.origin_x + (mouse_x - relative_centre_x),  point.origin_x -max_point_shift),  point.origin_x + max_point_shift);

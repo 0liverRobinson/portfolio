@@ -1,7 +1,10 @@
 const sections = document.getElementsByClassName("section_container");
-const observer = new IntersectionObserver( elements => {
-    elements.forEach( element => {
-        try  {
+const observer = new IntersectionObserver( elements => 
+{
+    elements.forEach( element => 
+    {
+        try  
+        {
 
             let current_title = element.target.querySelector('.heading');
             let current_content = element.target.querySelector('.part_b');
