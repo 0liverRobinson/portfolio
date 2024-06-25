@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  font-family: "VT323", monospace;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+html, body {
+    max-width: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
